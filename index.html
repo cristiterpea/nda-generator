@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NDA Generator for the Paranoid</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      min-height: 100vh;
+      background: black;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding-top: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: blue;
+    }
+
+    .checkbox-list {
+      color: black;
+-      max-height: 400px;
+-      overflow-y: auto;
+      padding: 15px;
+      border-radius: 8px;
+      background: linear-gradient(to bottom, green, yellow, orange, red);
+    }
+
+    .btn-group {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .generate-btn {
+      display: block;
+      margin: 30px auto;
+      text-align: center;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>NDA Generator for the Paranoid</h1>
+    <p>This site is for individuals and businesses who want to make absolutely sure their intellectual property, ideas, and products remain secure. Select your fears, and we’ll build the perfect NDA to match your paranoia!</p>
+
+    <div class="btn-group">
+      <button class="btn btn-primary" onclick="selectAll()">Select All</button>
+      <button class="btn btn-danger" onclick="deselectAll()">Deselect All</button>
+    </div>
+
+    <div class="checkbox-list">
+      <form id="paranoiaForm">
+<div>
+  <h2>Product-Related Fears</h2>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear1"><label class="form-check-label" for="fear1">Fear of small pieces of your product being swallowed by children.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear2"><label class="form-check-label" for="fear2">Fear of someone tripping on your product and you being held liable.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear3"><label class="form-check-label" for="fear3">Fear of photos of your product being leaked online in unflattering lighting.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear4"><label class="form-check-label" for="fear4">Fear of your product being used as a weapon in a crime.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear5"><label class="form-check-label" for="fear5">Fear of your product being accidentally eaten by pets.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear6"><label class="form-check-label" for="fear6">Fear of your product being used to prop open doors indefinitely.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear7"><label class="form-check-label" for="fear7">Fear of your product being dropped from a plane and causing a chain reaction of destruction.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear8"><label class="form-check-label" for="fear8">Fear of your product being featured in a horror movie without your consent.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear9"><label class="form-check-label" for="fear9">Fear of your product being mistaken for alien technology.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear10"><label class="form-check-label" for="fear10">Fear of your product becoming sentient and suing you for unethical treatment.</label></div>
+</div>
+
+<div>
+  <h2>Communication Fears</h2>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear11"><label class="form-check-label" for="fear11">Fear of your NDA not being covered by all 7,000 potential languages in the world.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear12"><label class="form-check-label" for="fear12">Fear of typos in your NDA being exploited by clever lawyers.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear13"><label class="form-check-label" for="fear13">Fear of emojis in your emails being misinterpreted as binding agreements.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear14"><label class="form-check-label" for="fear14">Fear of someone using carrier pigeons to spread your confidential information.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear15"><label class="form-check-label" for="fear15">Fear of sign language interpreters unintentionally signing your confidential ideas.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear16"><label class="form-check-label" for="fear16">Fear of auto-correct revealing your trade secrets.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear17"><label class="form-check-label" for="fear17">Fear of your NDA being translated into Klingon without permission.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear18"><label class="form-check-label" for="fear18">Fear of your NDA being printed on edible paper and consumed to destroy evidence.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear19"><label class="form-check-label" for="fear19">Fear of Zoom backgrounds revealing confidential office details.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear20"><label class="form-check-label" for="fear20">Fear of someone overhearing your secrets via two cans and a string.</label></div>
+</div>
+
+<div>
+  <h2>Employee and People-Related Fears</h2>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear21"><label class="form-check-label" for="fear21">Fear of aliens abducting your employees and creating evil clones.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear22"><label class="form-check-label" for="fear22">Fear of your employees accidentally spilling secrets while sleep-talking.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear23"><label class="form-check-label" for="fear23">Fear of your employees wearing branded shirts in public and leaking your ideas.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear24"><label class="form-check-label" for="fear24">Fear of your employees doodling your designs on napkins that get lost.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear25"><label class="form-check-label" for="fear25">Fear of your employees gossiping about work to overly curious baristas.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear26"><label class="form-check-label" for="fear26">Fear of your employees being hypnotized to reveal trade secrets.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear27"><label class="form-check-label" for="fear27">Fear of your employees accidentally writing your trade secrets in their diaries.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear28"><label class="form-check-label" for="fear28">Fear of your employees’ dreams being hacked for intellectual property.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear29"><label class="form-check-label" for="fear29">Fear of your employees being replaced by identical-looking spies.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear30"><label class="form-check-label" for="fear30">Fear of your ex-employees writing “tell-all” romance novels based on your office drama.</label></div>
+</div>
+
+<div>
+  <h2>Technology Fears</h2>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear31"><label class="form-check-label" for="fear31">Fear of aliens abducting your work and copying it.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear32"><label class="form-check-label" for="fear32">Fear of AI learning your trade secrets and sharing them with rival AIs.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear33"><label class="form-check-label" for="fear33">Fear of your technology being reverse-engineered by time travelers.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear34"><label class="form-check-label" for="fear34">Fear of USB drives containing your secrets being lost and used as keychains.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear35"><label class="form-check-label" for="fear35">Fear of smartphones accidentally auto-posting your confidential info to social media.</label></div>
+</div>
+
+<div>
+  <h2>Use and Misuse Fears</h2>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear36"><label class="form-check-label" for="fear36">Fear of your product being used in a failed magic trick.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear37"><label class="form-check-label" for="fear37">Fear of your product being featured in viral TikToks without credit.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear38"><label class="form-check-label" for="fear38">Fear of your product being used to create makeshift art installations.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear39"><label class="form-check-label" for="fear39">Fear of your product becoming a meme with unintended consequences.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear40"><label class="form-check-label" for="fear40">Fear of your product being used as an ashtray.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear41"><label class="form-check-label" for="fear41">Fear of your product being modified into a completely different invention.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear42"><label class="form-check-label" for="fear42">Fear of your product being glued to random objects as a prank.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear43"><label class="form-check-label" for="fear43">Fear of your product being sold on the black market as “artisanal contraband.”</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear44"><label class="form-check-label" for="fear44">Fear of your product being used to create embarrassing cosplay.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear45"><label class="form-check-label" for="fear45">Fear of your product being featured on a conspiracy theory blog.</label></div>
+</div>
+
+<div>
+  <h2>Environmental Fears</h2>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear46"><label class="form-check-label" for="fear46">Fear of your product being buried in a time capsule and rediscovered too soon.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear47"><label class="form-check-label" for="fear47">Fear of your product becoming a habitat for bees or small animals.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear48"><label class="form-check-label" for="fear48">Fear of your product disintegrating into glitter and causing an ecological disaster.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear49"><label class="form-check-label" for="fear49">Fear of your product being consumed by bears mistaking it for food.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear50"><label class="form-check-label" for="fear50">Fear of your product being washed into the ocean and used by mermaids.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear51"><label class="form-check-label" for="fear51">Fear of your product being blamed for global warming.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear52"><label class="form-check-label" for="fear52">Fear of your product causing a butterfly effect leading to a natural disaster.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear53"><label class="form-check-label" for="fear53">Fear of your product being left in the sun and emitting harmful secrets.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear54"><label class="form-check-label" for="fear54">Fear of your product being stolen by pirates during shipping.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear55"><label class="form-check-label" for="fear55">Fear of your product being magnetized and disrupting Earth’s polarity.</label></div>
+</div>
+
+<div>
+  <h2>Paranoia on a Global Scale</h2>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear56"><label class="form-check-label" for="fear56">Fear of world leaders accidentally leaking your product at a summit.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear57"><label class="form-check-label" for="fear57">Fear of your product being featured in an unlicensed stamp collection.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear58"><label class="form-check-label" for="fear58">Fear of international spies smuggling your designs in diplomatic pouches.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear59"><label class="form-check-label" for="fear59">Fear of your NDA being invalid in space jurisdictions.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear60"><label class="form-check-label" for="fear60">Fear of your product being banned in a country for ridiculous reasons.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear61"><label class="form-check-label" for="fear61">Fear of global protests demanding free access to your product.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear62"><label class="form-check-label" for="fear62">Fear of your product causing an international trade war.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear63"><label class="form-check-label" for="fear63">Fear of your product accidentally sparking a new religion.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear64"><label class="form-check-label" for="fear64">Fear of archaeologists finding your product and misinterpreting its use.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear65"><label class="form-check-label" for="fear65">Fear of your technology being declared “too advanced” and confiscated.</label></div>
+</div>
+
+<div>
+  <h2>Out-of-this-World Fears</h2>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear66"><label class="form-check-label" for="fear66">Fear of your product being mistaken for alien technology and causing panic.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear67"><label class="form-check-label" for="fear67">Fear of your product being sent to the moon and left behind.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear68"><label class="form-check-label" for="fear68">Fear of your product becoming self-aware and attempting to leave Earth.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear69"><label class="form-check-label" for="fear69">Fear of aliens declaring your product a violation of intergalactic law.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear70"><label class="form-check-label" for="fear70">Fear of extraterrestrial beings suing you for royalties on a “stolen idea.”</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear71"><label class="form-check-label" for="fear71">Fear of black holes accidentally ingesting your intellectual property.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear72"><label class="form-check-label" for="fear72">Fear of secret alien customers replicating your business model.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear73"><label class="form-check-label" for="fear73">Fear of your product being adapted for space battles by future humans.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear74"><label class="form-check-label" for="fear74">Fear of your product being used to terraform Mars without your permission.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear75"><label class="form-check-label" for="fear75">Fear of interdimensional beings accusing you of patent infringement.</label></div>
+</div>
+
+<div>
+  <h2>Miscellaneous Paranoia</h2>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear76"><label class="form-check-label" for="fear76">Fear of children drawing your product in crayon and getting too much attention.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear77"><label class="form-check-label" for="fear77">Fear of your product being turned into a reality TV show without credit.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear78"><label class="form-check-label" for="fear78">Fear of someone tattooing your logo without authorization.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear79"><label class="form-check-label" for="fear79">Fear of rivals creating parody versions of your NDA.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear80"><label class="form-check-label" for="fear80">Fear of someone making origami with discarded copies of your NDA.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear81"><label class="form-check-label" for="fear81">Fear of your product accidentally curing diseases and changing your business model.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear82"><label class="form-check-label" for="fear82">Fear of ghosts haunting your office and sharing your trade secrets.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear83"><label class="form-check-label" for="fear83">Fear of your NDA being copied and sold as a novelty item.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear84"><label class="form-check-label" for="fear84">Fear of your NDA being turned into an inspirational speech.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear85"><label class="form-check-label" for="fear85">Fear of your NDA being featured on a lawyer’s comedy podcast.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear86"><label class="form-check-label" for="fear86">Fear of your NDA itself becoming sentient and leaking your company secrets.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear87"><label class="form-check-label" for="fear87">Fear of squirrels stealing your prototypes for their nests.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear88"><label class="form-check-label" for="fear88">Fear of archaeologists unearthing your NDAs in a thousand years and laughing.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear89"><label class="form-check-label" for="fear89">Fear of your NDA being quoted in a political debate.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear90"><label class="form-check-label" for="fear90">Fear of your product being used to fake paranormal activity.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear91"><label class="form-check-label" for="fear91">Fear of your product being blamed for mysterious crop circles.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear92"><label class="form-check-label" for="fear92">Fear of someone using your ideas to create ironic performance art.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear93"><label class="form-check-label" for="fear93">Fear of your secrets being shared via graffiti in a trendy neighborhood.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear94"><label class="form-check-label" for="fear94">Fear of a rival creating a better parody product and outselling you.</label></div>
+  <div class="form-check"><input class="form-check-input" type="checkbox" id="fear95"><label class="form-check-label" for="fear95">Fear of the universe collapsing due to accidental misuse of your product.</label></div>
+</div>
+
+      </form>
+    </div>
+
+    <button class="btn btn-success generate-btn" onclick="generateNDA()">Generate NDA</button>
+  </div>
+
+  <script>
+    function selectAll() {
+      const checkboxes = document.querySelectorAll('.form-check-input');
+      checkboxes.forEach(checkbox => checkbox.checked = true);
+    }
+
+    function deselectAll() {
+      const checkboxes = document.querySelectorAll('.form-check-input');
+      checkboxes.forEach(checkbox => checkbox.checked = false);
+    }
+
+    function generateNDA() {
+      alert('Hope you enjoyed it!');
+    }
+  </script>
+</body>
+
+</html>
